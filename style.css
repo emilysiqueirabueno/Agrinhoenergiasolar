@@ -1,0 +1,61 @@
+/* Variáveis de Cores (Aesthetic Rosé & Contraste de Acessibilidade) */
+:root {
+    --bg-color: #FAF6F6;      /* Off-white com toque rosado bem suave */
+    --text-color: #352626;    /* Marrom bem escuro/café (garante contraste sobre o rosa) */
+    --accent-color: #B87D7D;  /* Rosa antigo / Rosé queimado elegante */
+    --light-accent: #F0E2E2;  /* Rosa pastel super suave para fundos e blocos */
+    --font-main: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Reset Básico e Acessibilidade */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-main);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Link de Acessibilidade escondido (aparece com o Tab) */
+.skip-link {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    background: var(--accent-color);
+    color: white;
+    padding: 10px;
+    z-index: 100;
+    transition: top 0.3s;
+}
+.skip-link:focus {
+    top: 0;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5%;
+    background-color: transparent;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: -1px;
+    color: var(--text-color);
+}
+
+.nav-links ul {
+    display
